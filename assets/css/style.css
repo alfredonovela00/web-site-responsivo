@@ -200,5 +200,39 @@ h4 {
     margin-bottom: 100px ;
     margin-right: 100px;
    }
+
+   .about-box{
+    width: 450px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: absolute;
+    transform: translate(5%, 30%);
+    background: white;
+    border-radius: 15px;
+}
+
+#about{
+    height: 120vh;
+    background: rgb(16, 45, 56);
+}
+
+
+.about-box-text p{
+    padding-right: 160px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    width: 450px;
+    text-align: justify;
+}
+
+.about-img{
+    display: none;
+}
+
+.about-box-text h1{
+    padding-left: 100px;
+}
     
 }
