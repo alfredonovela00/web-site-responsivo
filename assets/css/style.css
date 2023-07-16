@@ -131,17 +131,17 @@ h4 {
 }
 
 #about{
-    height: 80vh;
+    height: 100vh;
     background: rgb(16, 45, 56);
 }
 
 .about-box{
-    width: 800px;
-    height: 400px;
+    width: 900px;
+    height: 600px;
     display: flex;
     margin: auto;
     position: absolute;
-    transform: translate(60%, 50%);
+    transform: translate(50%, 30%);
     background: white;
     border-radius: 15px;
 }
@@ -151,18 +151,29 @@ h4 {
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-    width: 300px;
-    height: 300px;
-    transform: translate(20%, 15%);
+    width: 330px;
+    height: 400px;
+    transform: translate(20%, 25%);
 }
 
 .about-box-text{
     padding-left: 100px;
 }
 
-.about-box-text h4{
-    padding-left: 150px;
+.about-box-text h1{
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.3rem;
 }
+
+.about-box-text p{
+    padding-top: 30px;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    text-align: justify;
+}
+
 
 @media only screen and (max-width: 700px)  {
     .logo{
