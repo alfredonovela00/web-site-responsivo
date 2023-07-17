@@ -135,48 +135,28 @@ h4 {
 }
 
 #about{
+    display: flex;
+    justify-content: center;
     height: 100vh;
-    background: rgb(16, 45, 56);
+    background: rgb(21, 58, 73);
 }
 
 .about-box{
-    width: 900px;
-    height: 600px;
-    display: flex;
-    margin: auto;
-    position: absolute;
-    transform: translate(50%, 30%);
-    background: white;
-    border-radius: 15px;
+    margin-top: 15%;
+    position: relative;
+    width: 800px;
+    height: 450px;
+    background: whitesmoke;
 }
 
 .about-img{
-   background: url(../img/about.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-    width: 330px;
-    height: 400px;
-    transform: translate(20%, 25%);
+    width: 350px;
+    height: 450px;
+    background: url(../img/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.about-box-text{
-    padding-left: 100px;
-}
-
-.about-box-text h1{
-    padding: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.3rem;
-}
-
-.about-box-text p{
-    padding-top: 30px;
-    padding-left: 10px;
-    font-family: 'Roboto', sans-serif;
-    width: 400px;
-    text-align: justify;
-}
 
 #services{
     background: rgba(0, 0, 0, 0.7) url(../img/bg-services.jpg);
@@ -198,8 +178,8 @@ h4 {
 
 .box-services{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
   
 }
 
@@ -265,13 +245,9 @@ h4 {
         display: none;
     }
 
-    #start{
-        display: flex;
-        flex-direction: column;
-    }
 
     header{
-        padding: 30px;
+        padding: 10px;
     }
 
     .box-start h1 {
@@ -287,42 +263,54 @@ h4 {
    }
 
    .box-start-2 .btn-start{
-    margin-bottom: 100px ;
+    margin-bottom: 60px ;
     margin-right: 100px;
    }
 
    .about-box{
+    margin-top: 35%;
+    position: relative;
     width: 450px;
-    height: 650px;
+    height: 200px;
+    background: whitesmoke;
+}
+
+.box-services{
     display: flex;
-    flex-direction: column;
-    margin: auto;
-    position: absolute;
-    transform: translate(5%, 30%);
-    background: white;
+    flex-wrap: wrap;
+  
+}
+
+.card-services{
+    width: 220px;
+    height: 470px;
+    margin: 10px;
+    border: 3px solid #ccc;
     border-radius: 15px;
 }
 
-#about{
-    height: 120vh;
-    background: rgb(16, 45, 56);
-}
-
-
-.about-box-text p{
-    padding-right: 160px;
-    text-align: justify;
-    font-family: 'Roboto', sans-serif;
-    width: 450px;
-    text-align: justify;
-}
 
 .about-img{
-    display: none;
+    width: 170px;
+    height: 200px;
+    background: url(../img/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.about-box-text h1{
-    padding-left: 100px;
+
+
+#about{
+    height: 70vh;
 }
+
+#services{
+    height: 170vh;
+}
+
+
+
+
+
     
 }
