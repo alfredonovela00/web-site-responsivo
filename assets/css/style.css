@@ -265,6 +265,11 @@ h4 {
         display: none;
     }
 
+    #start{
+        display: flex;
+        flex-direction: column;
+    }
+
     header{
         padding: 30px;
     }
