@@ -178,6 +178,87 @@ h4 {
     text-align: justify;
 }
 
+#services{
+    background: rgba(0, 0, 0, 0.7) url(../img/bg-services.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#services h1{
+    text-align: center;
+    padding: 30px;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box-services{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+
+.card-services{
+    width: 430px;
+    height: 400px;
+    margin: 10px;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+}
+
+.card-img-services{
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+
+.card-services-content h3{
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-services-content p{
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+.it-support{
+    background: url(../img/it.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.marketing-d{
+    background: url(../img/marketing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wb{
+    background: url(../img/wb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.sf{
+    background: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+
 
 @media only screen and (max-width: 700px)  {
     .logo{
