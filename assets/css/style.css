@@ -139,14 +139,14 @@ h4 {
     background: rgb(21, 58, 73);
 }
 
-.about-container-content{
+.about-container-content {
     display: flex;
     justify-content: center;
     position: relative;
     transform: translate(2%, 2%);
 }
 
-.card-about-img{
+.card-about-img {
     width: 385px;
     height: 550px;
     background: rgba(0, 0, 0, 0.7) url(../img/about.jpg);
@@ -155,13 +155,15 @@ h4 {
     background-size: cover;
 }
 
-.card-about-content{
+.card-about-content {
+    display: flex;
+    flex-wrap: wrap;
     width: 600px;
     height: 550px;
     background-color: #ccc;
 }
 
-.card-about-content h3{
+.card-about-content h3 {
     color: rgb(21, 58, 73);
     font-weight: bold;
     padding: 20px;
@@ -169,25 +171,32 @@ h4 {
     font-size: 1.5rem;
 }
 
-.card-about-content p{
+.card-about-content p {
     text-align: justify;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
 
-.social-media-card{
+.social-media-card {
     display: flex;
     justify-content: center;
     padding: 20px;
     gap: 20px;
     font-size: 2.5rem;
-    
+    margin: auto;
+
 }
 
-.icon-sm{
+.icon-sm {
     cursor: pointer;
     color: rgb(21, 58, 73);
+    font-weight: bold;
+}
+
+.icon-sm:hover {
+    cursor: pointer;
+    color: black;
     font-weight: bold;
 }
 
@@ -325,28 +334,65 @@ h4 {
         border-radius: 15px;
     }
 
-
-    .about-img {
-        width: 170px;
-        height: 200px;
-        background: url(../img/about.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
+    .card-about-img {
+        display: none;
     }
 
+    .card-about-img {
+        width: 100px;
+        height: 550px;
+
+    }
+
+
+    .card-about-content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        height: 750px;
+        background: rgba(0, 0, 0, 0.7) url(../img/about.jpg);
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .card-about-content h3 {
+        color: black;
+        font-weight: bold;
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .card-about-content p {
+        text-align: justify;
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        color: white;
+    }
+
+    .social-media-card{
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+        font-size: 2rem;
+        margin: auto;
+        
+    }
+
+    .icon-sm{
+        color: white;
+    }
 
 
     #about {
-        height: 70vh;
+        height: 120vh;
     }
 
     #services {
-        height: 170vh;
+        height: 210vh;
     }
-
-
-
-
-
 
 }
