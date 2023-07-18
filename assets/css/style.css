@@ -8,7 +8,7 @@
     list-style: none;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -59,7 +59,7 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover{
+nav a:hover {
     color: black;
     font-weight: bold;
 }
@@ -134,31 +134,67 @@ h4 {
     border: 3px solid black;
 }
 
-#about{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
+#about {
+    height: 80vh;
     background: rgb(21, 58, 73);
 }
 
-.about-box{
-    margin-top: 15%;
+.about-container-content{
+    display: flex;
+    justify-content: center;
     position: relative;
-    width: 800px;
-    height: 450px;
-    background: whitesmoke;
+    transform: translate(2%, 2%);
 }
 
-.about-img{
-    width: 350px;
-    height: 450px;
-    background: url(../img/about.jpg);
-    background-size: cover;
+.card-about-img{
+    width: 385px;
+    height: 550px;
+    background: rgba(0, 0, 0, 0.7) url(../img/about.jpg);
+    background-blend-mode: darken;
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-about-content{
+    width: 600px;
+    height: 550px;
+    background-color: #ccc;
+}
+
+.card-about-content h3{
+    color: rgb(21, 58, 73);
+    font-weight: bold;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.card-about-content p{
+    text-align: justify;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.social-media-card{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    font-size: 2.5rem;
+    
+}
+
+.icon-sm{
+    cursor: pointer;
+    color: rgb(21, 58, 73);
+    font-weight: bold;
 }
 
 
-#services{
+
+
+#services {
     background: rgba(0, 0, 0, 0.7) url(../img/bg-services.jpg);
     background-blend-mode: darken;
     background-size: cover;
@@ -168,7 +204,7 @@ h4 {
     height: 100vh;
 }
 
-#services h1{
+.center-text {
     text-align: center;
     padding: 30px;
     font-size: 2rem;
@@ -176,14 +212,14 @@ h4 {
     font-family: 'Roboto', sans-serif;
 }
 
-.box-services{
+.box-services {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  
+
 }
 
-.card-services{
+.card-services {
     width: 430px;
     height: 400px;
     margin: 10px;
@@ -191,14 +227,14 @@ h4 {
     border-radius: 15px;
 }
 
-.card-img-services{
+.card-img-services {
     height: 200px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    
+
 }
 
-.card-services-content h3{
+.card-services-content h3 {
     padding: 10px;
     font-size: 1.5rem;
     color: white;
@@ -206,7 +242,7 @@ h4 {
     font-family: 'Roboto', sans-serif;
 }
 
-.card-services-content p{
+.card-services-content p {
     padding: 10px;
     font-size: 1rem;
     color: white;
@@ -214,39 +250,39 @@ h4 {
     text-align: justify;
 }
 
-.it-support{
+.it-support {
     background: url(../img/it.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.marketing-d{
+.marketing-d {
     background: url(../img/marketing.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.wb{
+.wb {
     background: url(../img/wb.jpg);
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;
 }
 
-.sf{
+.sf {
     background: url(../img/header.jpg);
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;
 }
 
 
 
-@media only screen and (max-width: 700px)  {
-    .logo{
+@media only screen and (max-width: 700px) {
+    .logo {
         display: none;
     }
 
 
-    header{
+    header {
         padding: 10px;
     }
 
@@ -258,59 +294,59 @@ h4 {
         font-size: 1rem;
     }
 
-   .box-start-2 p{
-    padding-right: 80px;
-   }
+    .box-start-2 p {
+        padding-right: 80px;
+    }
 
-   .box-start-2 .btn-start{
-    margin-bottom: 60px ;
-    margin-right: 100px;
-   }
+    .box-start-2 .btn-start {
+        margin-bottom: 60px;
+        margin-right: 100px;
+    }
 
-   .about-box{
-    margin-top: 35%;
-    position: relative;
-    width: 450px;
-    height: 200px;
-    background: whitesmoke;
-}
+    .about-box {
+        margin-top: 35%;
+        position: relative;
+        width: 450px;
+        height: 200px;
+        background: whitesmoke;
+    }
 
-.box-services{
-    display: flex;
-    flex-wrap: wrap;
-  
-}
+    .box-services {
+        display: flex;
+        flex-wrap: wrap;
 
-.card-services{
-    width: 220px;
-    height: 470px;
-    margin: 10px;
-    border: 3px solid #ccc;
-    border-radius: 15px;
-}
+    }
 
-
-.about-img{
-    width: 170px;
-    height: 200px;
-    background: url(../img/about.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    .card-services {
+        width: 220px;
+        height: 470px;
+        margin: 10px;
+        border: 3px solid #ccc;
+        border-radius: 15px;
+    }
 
 
-
-#about{
-    height: 70vh;
-}
-
-#services{
-    height: 170vh;
-}
+    .about-img {
+        width: 170px;
+        height: 200px;
+        background: url(../img/about.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
 
 
+    #about {
+        height: 70vh;
+    }
+
+    #services {
+        height: 170vh;
+    }
 
 
-    
+
+
+
+
 }
