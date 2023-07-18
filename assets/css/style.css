@@ -285,7 +285,7 @@ h4 {
 
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
     .logo {
         display: none;
     }
@@ -296,15 +296,17 @@ h4 {
     }
 
     .box-start h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .box-start h4 {
+     
         font-size: 1rem;
     }
 
     .box-start-2 p {
         padding-right: 80px;
+        font-size: 15px;
     }
 
     .box-start-2 .btn-start {
