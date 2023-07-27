@@ -135,7 +135,7 @@ h4 {
 }
 
 #about {
-    height: 80vh;
+    height: 90vh;
     background: rgb(21, 58, 73);
 }
 
@@ -147,6 +147,7 @@ h4 {
 }
 
 .card-about-img {
+    margin-top: 20px;
     width: 385px;
     height: 550px;
     background: rgba(0, 0, 0, 0.7) url(../img/about.jpg);
@@ -156,9 +157,8 @@ h4 {
 }
 
 .card-about-content {
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px;
+    margin-top: 20px;
+    width: 650px;
     height: 550px;
     background-color: #ccc;
 }
@@ -183,20 +183,21 @@ h4 {
     justify-content: center;
     padding: 20px;
     gap: 20px;
-    font-size: 2.5rem;
     margin: auto;
 
 }
 
 .icon-sm {
+    padding: 15px;
     cursor: pointer;
-    color: rgb(21, 58, 73);
+    color: white;
     font-weight: bold;
+    font-size: 2.5rem;
 }
 
 .icon-sm:hover {
     cursor: pointer;
-    color: black;
+    color: orangered;
     font-weight: bold;
 }
 
@@ -213,9 +214,17 @@ h4 {
     height: 100vh;
 }
 
-.center-text {
+.center-text-services {
     text-align: center;
-    padding: 30px;
+    padding: 12px;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.center-text-about {
+    text-align: center;
+    padding: 12px;
     font-size: 2rem;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -283,6 +292,108 @@ h4 {
     background-size: cover;
 }
 
+#contact {
+    display: flex;
+    height: 100vh;
+}
+
+.contact-info {
+    width: 40%;
+    background: rgba(0, 0, 0, 0.7) url(../img/social-bg.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.icons-info {
+    display: flex;
+    text-align: center;
+    padding-top: 80px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon-contact {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-info ul li a {
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+
+.contact-text {
+    padding-top: 25%;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.contact-text-social {
+    padding-top: 78%;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.contact-form {
+    width: 80%;
+    background: rgba(0, 0, 0, 0.7) url(../img/contact.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form {
+    position: relative;
+    transform: translate(28%, 5%);
+}
+
+form input,
+textarea {
+    width: 500px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.664);
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit {
+    background: rgb(21, 58, 73);
+    padding: 15px;
+    margin-top: 50px;
+    margin-left: 28%;
+    width: 500px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.direitos h4 {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 
 
 @media only screen and (max-width: 700px) {
@@ -300,7 +411,7 @@ h4 {
     }
 
     .box-start h4 {
-     
+
         font-size: 1rem;
     }
 
@@ -329,8 +440,8 @@ h4 {
     }
 
     .card-services {
-        width: 220px;
-        height: 470px;
+        width: 200px;
+        height: 460px;
         margin: 10px;
         border: 3px solid #ccc;
         border-radius: 15px;
@@ -344,6 +455,14 @@ h4 {
         width: 100px;
         height: 550px;
 
+    }
+
+    .card-services-content p {
+        padding: 10px;
+        font-size: 14px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
     }
 
 
@@ -363,14 +482,14 @@ h4 {
         text-align: center;
         color: black;
         font-weight: bold;
-        padding: 20px;
+        padding: 10px;
         font-family: 'Roboto', sans-serif;
         font-size: 1.5rem;
     }
 
     .card-about-content p {
         text-align: justify;
-        padding: 20px;
+        padding: 10px;
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
         color: white;
@@ -378,24 +497,106 @@ h4 {
 
     .social-media-card {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 20px;
-        gap: 20px;
+        gap: 10px;
         font-size: 2rem;
-        margin: auto;
 
+    }
+
+    .social-media-card a {
+        margin-top: 65px;
     }
 
     .icon-sm {
         color: white;
+        padding-top: 25%;
     }
 
 
     #about {
-        height: 160vh;
+        height: 115vh;
     }
 
     #services {
-        height: 280vh;
+        height: 200vh;
     }
+
+
+    #contact {
+        display: flex;
+        height: 80vh;
+    }
+
+    .contact-info {
+        width: 20%;
+        background: rgba(0, 0, 0, 0.7) url(../img/social-bg.jpg);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-position: bottom left;
+        background-repeat: no-repeat;
+    }
+
+    .contact-info h3 {
+        display: none;
+    }
+
+    .contact-form {
+        width: 80%;
+        background: rgba(0, 0, 0, 0.7) url(../img/contact.jpg);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .form {
+        position: relative;
+        transform: translate(15%, 5%);
+    }
+
+    form input,
+    textarea {
+        width: 300px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.664);
+        border-radius: 8px;
+        border: none;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .contact-text {
+        padding-top: 25%;
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .submit {
+        background: rgb(21, 58, 73);
+        padding: 10px;
+        margin-top: 50px;
+        margin-left: 15%;
+        width: 300px;
+        border-radius: 5px;
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .direitos h4 {
+        display: none;
+    }
+
+
+
+
 
 }
